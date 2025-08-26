@@ -1,0 +1,68 @@
+API = Application programming inerface
+
+(a way two pieces of software can comunicate with one another)
+
+For example one piece is built with pyhton, one is built with javascript
+An API allows two pieces of diffrently built software to communicate.
+
+Example:
+Python software can make an request to JS software, and JS software could send an response back
+
+Often its a one way thing, JS software can not make a request in this case 
+
+(Server/backend and client/frontend)
+
+Client consumes information given by the server
+
+
+
+API
+In rest API, we insted of html get JSON (JavaScriptObjectNotation)
+
+- JSON is a language or notation of describing information (The language of communication between the server and client)
+- Doesn't have to be done with javascript even though its called (JS)ON
+- Supported in almost every language
+- Standard for API
+- Not complicated, just series of key value pairs (Just like objects in JS, or dict in Python)
+
+- What we can communicate (for example list of users)
+- What we want is defined as API endpoint (for example when the request makes it to the server)
+- 
+
+
+REST
+- Stands for Representational State Transfer
+
+- Rest is the mean of communication (For example, how am i speaking to you, Phonecall? IRL?, Texting?)
+- Rest is communicating over the web, being done by making requests
+
+
+
+
+
+
+
+Example: (We dont want to give direct acces to the database, so insted we expose diffrent API-ednpoints)
+                                   (Getting Data / API-methods)    (Can get all of the drinks/specific drink in backend software by making request to "drinks/<id>" webaddress)
+Database - Python/Server/Backend - / drinks/<id> ------------------ JS/Client/Frontend
+                                
+                                                    FavoriteDrinks.com/drinks/<id>(5 for example) wil lreturn JSON all about the drink
+
+
+
+- We mostly use API for sequrity, so we jsut expose what we want the user to know, example they can't go into the database to see every user and addres
+- Secondly we use API for versitility, we could also build a mobile app, but could still use the same API to share the same backend and have the same data.
+- Thrid reason, modularity, because the frontend and backend are seperated, we can swap thigns out and not nessesaraly breaking diffrent pieces of the application, (we can change the backend without requiring an update to the frontend)
+- Last reason, interopobility. Theese frontend applications doesnt have to be built by you or the frontend development team. You could expose certian endpoints and make them PUBLIC, so you sdont have to worry about authentication and authoratation, anybody could make a new app that would be improved and consume your API
+
+
+OAUTH2 = a way to make sure its you that log into the API
+
+
+
+
+
+
+
+
+
