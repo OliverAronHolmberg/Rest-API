@@ -60,8 +60,21 @@ OAUTH2 = a way to make sure its you that log into the API
 
 
 
+Diffrent methods of requesting data from server
+
+- GET | what to use to retrive data from server
+- POST | used to write new data to the server/add resource
+- DELETE | used to delete stuff from server
+- PUT | used to write/update data from server/replace resource
+
+- CRUD | Create data(POST), Read data(GET), Update data(PUT), Delete data(DELETE)
 
 
+POST / drinks - add new drink
+PUT / drinks/<id> - replace drink
+
+
+PUT is guarenteed to be used multiple time without any side effects, it replaces insted of POST adding
 
 
 
